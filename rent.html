@@ -1,0 +1,149 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa para alugar| AlugaApp</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+    <link rel="icon" href="./public/img/casa.svg">
+
+    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./public/css/animations.css">
+    <link rel="stylesheet" href="./public/css/sidebar.css">
+    <link rel="stylesheet" href="./public/css/map.css">
+    <link rel="stylesheet" href="./public/css/buttons.css">
+    <link rel="stylesheet" href="./public/css/page-rent.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="page-rent">
+        <aside class="animate-right sidebar">
+            <h1 id="logo">A</h1>
+
+            <footer>
+                <button onclick="history.back()">
+                    <img src="./public/img/arrow-back.svg" alt="Voltar">
+                </button>
+            </footer>
+        </aside>
+
+        <main class="animate-appear with-sidebar">
+            <div class="real-estate-details">
+                <img src="./public/img/home/home.jpg" alt="Lar da meninas">
+
+                <div class="images">
+                    <button onclick="selectImage(event)" class="active" type="button">
+                        <img src="./public/img/home/pexels-dmitry-zvolskiy-2062426.jpg" alt="Lar das meninas">
+                    </button>
+
+                    <button onclick="selectImage(event)" class="active" type="button">
+                        <img src="./public/img/home/pexels-dmitry-zvolskiy-2082087.jpg" alt="Lar das meninas">
+                    </button>
+
+                    <button onclick="selectImage(event)" class="active" type="button">
+                        <img src="./public/img/home/pexels-homelane-com-1776574.jpg" alt="Lar das meninas">
+                    </button>
+
+                    <button onclick="selectImage(event)" class="active" type="button">
+                        <img src="./public/img/home/pexels-tim-gouw-5677270.jpg" alt="Lar das meninas">
+                    </button>
+
+                    <button onclick="selectImage(event)" class="active" type="button">
+                        <img src="./public/img/home/pexels-joey-342800.jpg" alt="Lar das meninas">
+                    </button>
+
+                    <button onclick="selectImage(event)" class="active" type="button">
+                        <img src="./public/img/home/pexels-skitterphoto-584399.jpg" alt="Lar das meninas">
+                    </button>
+                </div>
+
+                <div class="real-estate-details-content">
+                    <h1>Casa para alugar</h1>
+
+                    <p>Localizada no bairro Victoria certa, rua do Comercio. Uma casa de dois quartos e sala</p>
+
+                    <div class="map-container">
+                        <div id="mapid"></div>
+                        <span data-lat="-8.9011797" data-lng="13.2730554"></span>
+                        <footer>
+                            <a target="_blank" href="https://maps.google.com/">Ver rotas no Google maps</a>
+                        </footer>
+                    </div>
+
+                    <hr>
+
+                    <h2>Detalhes</h2>
+
+                    <div class="details">
+                        <table>
+                            <tr>
+                                <th class="title-th" colspan="2">A Proriedade</th>
+                            </tr>
+                            
+                            <tr>
+                              <th>Nº de compartimentos</th>
+                              <td>5</td>
+                            </tr>
+                            <tr>
+                              <th>Água corrente</th>
+                              <td>Sim</td>
+                            </tr>
+                            <tr>
+                                <th>Energia electrica</th>
+                                <td>Sim</td>
+                            </tr>
+                            <tr>
+                                <th>Tipo de negócio</th>
+                                <td>Aluguel</td>
+                            </tr>
+                        </table>
+
+                        <table>
+                            <tr>
+                                <th class="title-th" colspan="2">Outros</th>
+                            </tr>
+                            
+                            <tr>
+                              <th>Proprietário</th>
+                              <td>José da Siva</td>
+                            </tr>
+                            <tr>
+                              <th>Intermediário</th>
+                              <td>Nenhum</td>
+                            </tr>
+                            <tr>
+                                <th>Tefone</th>
+                                <td>928783652</td>
+                            </tr>
+                              <tr>
+                                <th>E-mail</th>
+                                <td>exemplo@gmail.com</td>
+                              </tr>
+                        </table>
+                        
+                    </div>
+
+                    <button class="primary-button" type="button">
+                        <img src="./public/img/whatsapp.svg" alt="">
+                        Entrar em contacto
+                    </button>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="./public/scripts/page-rent.js"></script>
+</body>
+</html>

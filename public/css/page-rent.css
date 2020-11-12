@@ -1,0 +1,132 @@
+#page-rent {
+    display: flex;
+    min-height: 100vh;
+}
+
+.with-sidebar {
+    padding-left: 200px;
+    padding-right: 100px;
+    flex: 1;
+}
+
+/* Details */
+.real-estate-details {
+    width: 100%;
+    margin: 2rem auto;
+    background: white;
+    border: 1px solid #D3E2E5;
+
+    border-radius: 2rem;
+
+    overflow: hidden;
+
+}
+
+.real-estate-details > img {
+    width: 100%;
+    height: 55rem;
+    object-fit: cover;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1.6rem;
+    margin: 16px 40px 0;
+}
+
+.images button {
+    border: 0;
+    background: none;
+
+    height: 8.8rem;
+    cursor: pointer;
+    border-radius: 2rem;
+
+    overflow: hidden;
+
+    opacity: 0.6;
+
+    transition: opacity 0.2s;
+}
+
+.images button:hover, .images button:active {
+    opacity: 1;
+}
+
+.images button img {
+    width: 100%;
+    height: 8.8rem;
+    object-fit: cover;
+}
+
+/*Orphanage details content*/
+
+.real-estate-details-content {
+    padding: 8rem;
+}
+
+.real-estate-details-content h1 {
+    color: #4D6F80;
+    font-size: 5.4rem;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+}
+
+.real-estate-details-content p {
+    line-height: 1.8;
+    color: #5C8599;
+    margin-top: 2.4rem;
+}
+
+.real-estate-details-content hr {
+    width: 100%;
+    height: 1px;
+
+    border: 0;
+
+    background: #D3E2E6;
+
+    margin: 6.4rem 0;
+}
+
+.real-estate-details-content h2 {
+    font-size: 3.6rem;
+    line-height: 1.5rem;
+    color: #4D6F80;
+}
+
+/* Open-details */
+
+.details {
+    margin-top: 2.4rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    line-height: 1.5;
+}
+
+.details table {
+    color: #393e41;
+}
+
+.details table th {
+    padding: 1rem;
+    background: #e7e5df;
+    text-align: left;
+    width: 50%;
+    margin-bottom: 15px;
+
+}
+
+.details table td {
+    background: #e7e5df;
+    padding: 1rem;
+}
+
+.details table .title-th {
+    text-align: center;
+    background: #393e41;
+    color: #fafffb;
+}
