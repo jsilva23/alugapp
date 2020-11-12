@@ -11,13 +11,6 @@
     width: min(90%, 112rem);
 }
 
-#logo {
-    font-family: 'Lobster', cursive;
-    font-size: 60px;
-    color: #393e41;
-    height: 12vh;
-}
-
 .location, h1, .visit p {
     height: 16vh;
 }
@@ -39,7 +32,7 @@ main h1 {
     height: 8rem;
     background: #393e41;
     text-decoration: none;
-    color: #fd7454;
+    color: #e7bb41;
 
     border: none;
     border-radius: 2rem;
