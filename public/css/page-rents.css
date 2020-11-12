@@ -58,7 +58,7 @@ a.create-rent {
 }
 
 a.create-rent:hover {
-    background: #17D6EB;
+    background: #44bba4;
 }
 
 .leaflet-popup-content-wrapper {
@@ -80,7 +80,7 @@ a.create-rent:hover {
 .leaflet-popup-content a {
     width: 4rem;
     height: 4rem;
-    background: #15C3D6;
+    background: #393e41;
     border-radius: 12px;
     box-shadow: 17.2828px 27.65px 41.48px rgba(23, 142, 166, 0.16);
     
@@ -92,7 +92,7 @@ a.create-rent:hover {
 }
 
 .leaflet-popup-content a:hover {
-    background: #17D6EB;
+    background: #52575d;
 }
 
 .leaflet-popup-tip {
