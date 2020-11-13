@@ -18,11 +18,12 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
 // Create icon
 const icon = L.icon({
-    iconUrl: "./public/img/imobiliaria.svg",
-    iconSize: [58, 68],
-    iconAnchor: [29, 68],
+    iconUrl: "./public/img/casa.svg",
+    iconSize: [45, 55],
+    iconAnchor: [23, 30],
     popupAnchor: [170, 2]
 });
+
 
 // Create and  add marker
 
