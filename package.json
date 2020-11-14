@@ -1,0 +1,20 @@
+{
+  "name": "alugapp",
+  "version": "1.0.0",
+  "description": "An original Rocketseat idea at NLW # 3, where the Happy app was developed.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsilva23/alugapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsilva23/alugapp/issues"
+  },
+  "homepage": "https://github.com/jsilva23/alugapp#readme"
+}
