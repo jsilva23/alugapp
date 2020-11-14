@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jsilva23/alugapp/issues"
   },
-  "homepage": "https://github.com/jsilva23/alugapp#readme"
+  "homepage": "https://github.com/jsilva23/alugapp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
