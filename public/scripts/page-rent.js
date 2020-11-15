@@ -18,7 +18,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
 // Create icon
 const icon = L.icon({
-    iconUrl: "./public/img/casa.svg",
+    iconUrl: "/img/casa.svg",
     iconSize: [45, 55],
     iconAnchor: [23, 30],
     popupAnchor: [170, 2]
