@@ -7,12 +7,15 @@ const server = express();
 
  
 server
-//utilizando os arquivos estaticos
-.use(express.static('public'))
-// criar uma rota
-.get('/', (request, response) => {
-    return response.sendFile(path.join(__dirname, 'views', 'index.html'))
-})
+    //utilizando os arquivos estaticos
+    .use(express.static('public'))
+    //configurar template engine
+    .set('views', path.join(__dirname, 'views'))
+    .set('view engine', 'hbs')
+    // criar uma rota
+    .get('/', (request, response) => {
+        return response.render('index')
+    })
 
 // ligar o servidor
 server.listen(8080);
