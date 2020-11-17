@@ -49,7 +49,7 @@ fieldset legend {
     line-height: 1.5;
 }
 
-.input-block input, .input-block textarea {
+.input-block input, .input-block textarea, .input-block select {
     width: 100%;
 
     background: #f5f8fa;
@@ -59,9 +59,13 @@ fieldset legend {
     color: #5c8599;
 }
 
-.input-block input {
+.input-block input, .input-block select {
     height: 6.4rem;
     padding: 0 1.6rem;
+}
+
+.input-block select {
+    font-size: 1.6rem;
 }
 
 .input-block textarea {

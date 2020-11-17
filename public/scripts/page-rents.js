@@ -14,14 +14,29 @@ const icon = L.icon({
     popupAnchor: [160, 40]
 });
 
-// Creat popup overlay
-const popup = L.popup({
-    closeButton: false,
-    className: 'map-popup',
-    minWidth: 240,
-    minHeight: 240
-}).setContent('Casa para alugar <a href="rent?id=1" class="choose-rent"> <img src="/img/arrow-white.svg"> </a>')
+function addMarker({id, business, lat, lng}) {
+    // Creat popup overlay
+    const popup = L.popup({
+        closeButton: false,
+        className: 'map-popup',
+        minWidth: 240,
+        minHeight: 240
+    }).setContent(`${business} <a href="rent?id=${id}"> <img src="/img/arrow-white.svg"> </a>`)
 
-// Create and  add marker
-L.marker([-8.9011797,13.2730554], { icon }).addTo(map)
-    .bindPopup(popup);
+    // Create and  add marker
+    L.marker([lat,lng], { icon }).addTo(map)
+        .bindPopup(popup);
+}
+
+const rentsSpan = document.querySelectorAll('.rents span');
+
+rentsSpan.forEach( span => {
+    const rent = {
+        id: span.dataset.id,
+        business: span.dataset.business,
+        lat: span.dataset.lat,
+        lng: span.dataset.lng
+    }
+
+    addMarker(rent)
+})

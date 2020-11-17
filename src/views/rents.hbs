@@ -41,6 +41,18 @@
 
         <div id="mapid" class="animate-appear"></div>
 
+        <div class="rents">
+            {{#each rents}}
+                <span hidden
+                    data-id="{{this.id}}" 
+                    data-business="{{this.business}}"                       
+                    data-lat="{{this.lat}}"
+                    data-lng="{{this.lng}}"
+                ></span>
+            {{/each}}
+        </div>
+
+
         <a href="create-rent" class="create-rent" title="Cadastre um aluguel">
             <i class="material-icons">add</i>
         </a>

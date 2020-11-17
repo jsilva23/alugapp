@@ -1,3 +1,5 @@
+const rents = require('./database/fakedata');
+
 module.exports = {
 
     index(request, response) {
@@ -5,7 +7,7 @@ module.exports = {
     },
 
     rents(request, response) {
-        return response.render('rents');
+        return response.render('rents', { rents });
     },
 
     rent(request, response) {
