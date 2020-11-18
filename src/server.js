@@ -7,6 +7,8 @@ const server = express();
 
  
 server
+    // utilizar o body do request
+    .use(express.urlencoded({extended: true}))
     //utilizando os arquivos estaticos
     .use(express.static('public'))
 
@@ -19,6 +21,6 @@ server
     .get('/rents', pages.rents)
     .get('/rent', pages.rent)
     .get('/create-rent', pages.createRent)
-
+    .post('/save-rent', pages.saveRent)
 // ligar o servidor
 server.listen(8080);
