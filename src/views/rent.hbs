@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa para alugar| AlugaApp</title>
+    <title>{{rent.business}}| AlugaApp</title>
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -69,15 +69,15 @@
                 </div>
 
                 <div class="real-estate-details-content">
-                    <h1>Casa para alugar</h1>
+                    <h1>{{rent.business}}</h1>
 
-                    <p>Localizada no bairro Victoria certa, rua do Comercio. Uma casa de dois quartos e sala</p>
+                    <p>{{rent.description}}</p>
 
                     <div class="map-container">
                         <div id="mapid"></div>
-                        <span data-lat="-8.9011797" data-lng="13.2730554"></span>
+                        <span data-lat="{{rent.lat}}" data-lng="{{rent.lng}}"></span>
                         <footer>
-                            <a target="_blank" href="https://maps.google.com/">Ver rotas no Google maps</a>
+                            <a target="_blank" href="https://maps.google.com/mobile?q={{rent.lat}},{{rent.lng}}&z=15">Ver rotas no Google maps</a>
                         </footer>
                     </div>
 
@@ -93,19 +93,19 @@
                             
                             <tr>
                               <th>Nº de compartimentos</th>
-                              <td>5</td>
+                              <td>{{rent.compartments}}</td>
                             </tr>
                             <tr>
                               <th>Água corrente</th>
-                              <td>Sim</td>
+                              <td>{{rent.water}}</td>
                             </tr>
                             <tr>
                                 <th>Energia electrica</th>
-                                <td>Sim</td>
+                                <td>{{rent.energy}}</td>
                             </tr>
                             <tr>
                                 <th>Tipo de negócio</th>
-                                <td>Aluguel</td>
+                                <td>{{rent.business_type}}</td>
                             </tr>
                         </table>
 
@@ -116,28 +116,28 @@
                             
                             <tr>
                               <th>Proprietário</th>
-                              <td>José da Siva</td>
+                              <td>{{rent.owner}}</td>
                             </tr>
                             <tr>
                               <th>Intermediário</th>
-                              <td>Nenhum</td>
+                              <td>{{rent.intermediary}}</td>
                             </tr>
                             <tr>
                                 <th>Telefone</th>
-                                <td>928783652</td>
+                                <td>{{rent.phone}}</td>
                             </tr>
                               <tr>
                                 <th>E-mail</th>
-                                <td>exemplo@gmail.com</td>
+                                <td>{{rent.email}}</td>
                               </tr>
                         </table>
                         
                     </div>
 
-                    <button class="primary-button" type="button">
+                    <a class="primary-button" href="https://api.whatsapp.com/send?1=pt_BR&phone={{rent.whatsapp}}&text=Olá! Gostaria de falar sobre o {{rent.business}}" target="_blank">
                         <img src="/img/whatsapp.svg" alt="">
                         Entrar em contacto
-                    </button>
+                    </a>
                 </div>
 
             </div>

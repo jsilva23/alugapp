@@ -1,40 +1,24 @@
 const Database = require('./db.js')
+const saveRent = require('./saveRent')
 
 Database.then(async db => {
     // Inserir dados na tabela
-    /*await db.run(`
-        INSERT INTO rents (
-            lat,
-            lng,
-            business,
-            description,
-            images,
-            compartments,
-            water,
-            energy,
-            business_type,
-            owner,
-            intermediary,
-            phone,
-            whatsapp,
-            email
-        ) VALUES (
-            '-8.9011797',
-            '13.2730554',
-            'Imóvel para alugar',
-            'Localizada no bairro Victoria certa, rua do Comercio. Uma casa de dois quartos e sala',
-            '',
-            '5',
-            '1',
-            '1',
-            'Aluguel',
-            'José da Silva',
-            'Nenhum',
-            '928783652',
-            '928783652',
-            'exemplo@gmail.com'
-        );
-    `)*/
+    await saveRent(db, {
+        lat: '-8.9011797',
+        lng: '13.2830554',
+        business: 'Imóvel a venda',
+        description: 'Localizada no bairro Calemba 2, rua da Policia. Uma casa grande já mobiliada',
+        images: '',
+        compartments: '9',
+        water: '0',
+        energy: '1',
+        business_type: 'Venda',
+        owner: 'Tomás Bunga',
+        intermediary: 'Shakila Abdul',
+        phone: '923774526',
+        whatsapp: '921735261',
+        email: 'exemplo@outlook.com'
+    })
 
     //Consultar dados na tabela
     const selectedRents = await db.all('SELECT * FROM rents')
